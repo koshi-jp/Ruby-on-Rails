@@ -6,5 +6,8 @@ Rails.application.routes.draw do
   get'todolists'=>'todolists#index'
   #.../todolists/1や．．．/todolists/3に該当する
   get'todolists/:id'=>'todolists#show',as:'todolist'
-
+  get'todolists/:id/edit'=>'todolists#edit',as:'edit_todolist'
+  patch'todolists/:id'=>'todolists#update',as:'update
+  _todolist'
+  
 end
